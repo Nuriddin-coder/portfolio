@@ -4,8 +4,8 @@ export const FigmaIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={44}
-      height={64}
+      width={50}
+      height={50}
       viewBox="0 0 44 64"
       fill="none"
     >

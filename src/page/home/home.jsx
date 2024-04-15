@@ -1,28 +1,39 @@
 import React from "react";
 import HeroSlider from "../../components/heroSlider/hero-slider";
+import { Link } from "react-router-dom";
 
 ////// Import Icons
 import { LocationIcon } from "../../assets/icon/location-icon";
-
 import { GitHubIcon } from "../../assets/icon/git-hub-icon";
 import { LinkedinIcon } from "../../assets/icon/linkedin-icon";
 import { FacebookIcon } from "../../assets/icon/facebook-icon";
+import { JSIcon } from "../../assets/icon/js-icon";
+import { TSIcon } from "../../assets/icon/ts-icon";
+import { ReactIcon } from "../../assets/icon/react-icon";
+import { NextJSIcon } from "../../assets/icon/next-js-icon";
+import { TailwindIcon } from "../../assets/icon/tailwind-icon";
+import { FigmaIcon } from "../../assets/icon/figma-icon";
+import { SassIcon } from "../../assets/icon/sass-icon";
+import { GitIcon } from "../../assets/icon/git-icon";
+import { TelegramIcon } from "../../assets/icon/telegram-icon";
+import { InstagramIcon } from "../../assets/icon/instagram-icon";
+import { LinkIcon } from "../../assets/icon/link-icon";
+import { LinkDesktopIcon } from "../../assets/icon/link-desktop-icon";
 
 ////// Import Imgs
 import Img from "../../assets/img/githubb.webp";
-import { Link } from "react-router-dom";
-import { TelegramIcon } from "../../assets/icon/telegram-icon";
-import { InstagramIcon } from "../../assets/icon/instagram-icon";
+import GipperImg from "../../assets/img/gipper.png";
 
 export const Home = () => {
   return (
     <div>
-      <div className="items-center justify-center gap-[200px] tablet:py-[40px] desktop:flex">
+      {/* Hero */}
+      <div className="container items-center justify-center gap-[200px] tablet:py-[40px] desktop:flex">
         <div className="my-6 desktop:hidden">
           <HeroSlider />
         </div>
 
-        <div className="pt-4">
+        <div className="pb-[60px] pt-4">
           <h1 className="text-[34px] font-semibold text-Gray900 dark:text-white tablet:text-[50px] tablet:font-bold">
             Hi, I'm Ned! <span class="wave">👋</span>
           </h1>
@@ -87,6 +98,116 @@ export const Home = () => {
           alt="github"
         />
       </div>
+
+      {/* Skill */}
+      <section className="bg-Gray50 dark:bg-GrayDark50">
+        <div className="container py-[30px]">
+          <p className="bg-Gray200 mx-auto w-[75px] rounded-full py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
+            Skills
+          </p>
+          <p className="mt-4 text-center text-Gray600 dark:text-GrayDark600">
+            The skills, tools and technologies I am really good at:
+          </p>
+          <div className="grid-cols-skillCol grid justify-items-center gap-x-8 gap-y-10 pt-8">
+            <span className="duration-300 hover:scale-125">
+              <JSIcon />
+            </span>
+            <span className="duration-300 hover:scale-125">
+              <ReactIcon />
+            </span>
+            <span className="duration-300 hover:scale-125">
+              <TSIcon />
+            </span>
+            <span className="duration-300 hover:scale-125">
+              <NextJSIcon />
+            </span>
+            <span className="duration-300 hover:scale-125">
+              <TailwindIcon />
+            </span>
+            <span className="duration-300 hover:scale-125">
+              <GitIcon />
+            </span>
+            <span className="duration-300 hover:scale-125">
+              <FigmaIcon />
+            </span>
+            <span className="duration-300 hover:scale-125">
+              <SassIcon />
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* Work */}
+      <section>
+        <div className="container py-8">
+          <p className="bg-Gray200 mx-auto w-[75px] rounded-full py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
+            Work
+          </p>
+          <p className="mt-4 text-center text-Gray600 dark:text-GrayDark600">
+            Some of the noteworthy projects I have built:
+          </p>
+
+          <div className="mt-[30px] justify-between rounded-lg shadow-lg dark:shadow-lg desktop:flex">
+            <div className="rounded-radiusOnlyTop cursor-pointer bg-gray-50 p-6 dark:bg-GrayDark200 desktop:flex desktop:w-full desktop:items-center desktop:rounded-none">
+              <img
+                className="mx-auto h-[150px] w-[270px] tablet:h-[250px] tablet:w-[420px] desktop:h-[320px] desktop:w-[550px]"
+                src={GipperImg}
+                alt="img"
+              />
+            </div>
+
+            <div className="px-6 pb-6 pt-8 dark:bg-GrayDark100 desktop:w-full desktop:pl-10">
+              <h1 className="text-[18px] font-bold text-Gray900 dark:text-GrayDark900">
+                Gipper Mart
+              </h1>
+              <p className="mt-4 max-w-[500px] text-Gray600 dark:text-GrayDark600">
+                This my Ecommers Project. in this project you can buy the item
+                you want, place an order and keep the item you like. You can
+                search your favorite items
+              </p>
+
+              <div className="mt-6 flex max-w-[400px] flex-wrap gap-x-4 gap-y-3">
+                <p className="bg-Gray200 w-[75px] rounded-full py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
+                  React
+                </p>
+
+                <p className="bg-Gray200 w-[135px] rounded-full py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
+                  Readux-toolkit
+                </p>
+                <p className="bg-Gray200 w-[115px] rounded-full py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
+                  React Query
+                </p>
+                <p className="bg-Gray200 w-[85px] rounded-full py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
+                  Axios
+                </p>
+                <p className="bg-Gray200 w-[115px] rounded-full py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
+                  Tailwindcss
+                </p>
+                <p className="bg-Gray200 w-[85px] rounded-full py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
+                  Daisy UI
+                </p>
+                <p className="bg-Gray200 w-[165px] rounded-full py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
+                  React Slick Slider
+                </p>
+                <p className="bg-Gray200 w-[115px] rounded-full py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
+                  React Lazy
+                </p>
+              </div>
+              <div className="w-[85px] border-b-2 pt-8 desktop:border-none">
+                <Link
+                  to="https://gipermart.netlify.app/"
+                  className="group flex items-center gap-2 text-[18px] text-Gray600 dark:text-GrayDark600"
+                >
+                  Review
+                  <span className="mb-1 duration-300 group-hover:scale-125">
+                    <LinkIcon />
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

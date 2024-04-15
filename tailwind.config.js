@@ -8,7 +8,7 @@ export default {
         center: true,
         padding: "20px",
         screens: {
-          lg: "1200px",
+          lg: "1350px",
         },
       },
       colors: {
@@ -21,10 +21,18 @@ export default {
         GreyDarkForAll: "#091B29",
         Gray600: "#4B5563",
         Gray900: "#111827",
+        Gray50: "#F9FAFB",
+        Gray200: "#E5E7EB",
       },
       screens: {
         tablet: "760px",
         desktop: "980px",
+      },
+      borderRadius: {
+        radiusOnlyTop: "10px 10px 0 0"
+      },
+      gridTemplateColumns: {
+        skillCol: "repeat(auto-fit, minmax(60px, 1fr))",
       },
     },
   },

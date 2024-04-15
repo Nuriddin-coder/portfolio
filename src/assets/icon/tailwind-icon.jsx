@@ -4,8 +4,8 @@ export const TailwindIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={105}
-      height={64}
+      width={50}
+      height={50}
       viewBox="0 0 105 64"
       fill="none"
     >

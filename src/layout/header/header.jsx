@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <div>
-      <div className="flex justify-between pt-2">
+      <div className="flex container justify-between pt-2">
         <Link to="/">
           <p className="text-[20px] font-bold dark:text-white tablet:text-[26px] desktop:text-[30px]">
             {" "}
