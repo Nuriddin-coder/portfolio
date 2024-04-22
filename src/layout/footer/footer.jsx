@@ -10,7 +10,7 @@ import { TelegramIcon } from "../../assets/icon/telegram-icon";
 import { InstagramIcon } from "../../assets/icon/instagram-icon";
 export const Footer = () => {
   return (
-    <>
+    <div id="contact">
       <div className="container py-6">
         <p className="mx-auto w-[115px] rounded-full bg-Gray200 py-1 text-center text-Gray600 dark:bg-GrayDark200 dark:text-GrayDark600">
           Get in Touch
@@ -85,9 +85,9 @@ export const Footer = () => {
       </div>
       <div className="bg-Gray50 py-3 text-center dark:bg-GrayDark50">
         <p className="text-Gray600 dark:text-GrayDark600">
-          2023 | Designed and coded with by Nuriddin
+          2024 | Designed and coded with by Nuriddin
         </p>
       </div>
-    </>
+    </div>
   );
 };
