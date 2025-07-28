@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSlider from "../../components/heroSlider/hero-slider";
 import { Link } from "react-router-dom";
 import SkillSlider from "../../components/skillSlider/skill-slider";
@@ -84,12 +83,6 @@ export const Home = () => {
             </Link>
           </div>
         </div>
-
-        <img
-          className="hidden w-[320px] desktop:inline-block"
-          src={Img}
-          alt="github"
-        />
       </div>
 
       {/* Skill */}
