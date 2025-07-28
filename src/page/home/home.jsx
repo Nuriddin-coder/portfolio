@@ -37,52 +37,6 @@ export const Home = () => {
             code and living with code is my world. I always thought it was a
             love of programming. I enjoy writing code and solving problems.
           </p>
-
-          <div className="mt-[50px] flex items-center gap-2">
-            <LocationIcon />
-            <p className="text-Gray600 dark:text-white  tablet:text-[20px] tablet:font-semibold">
-              Tashkent, Uzbekistan
-            </p>
-          </div>
-
-          {/* Links */}
-          <div className="mt-7 flex items-center gap-3">
-            <Link
-              to="https://github.com/Nuriddin-coder"
-              className="tooltip"
-              data-tip="Git Hub"
-            >
-              <GitHubIcon />
-            </Link>
-            <Link
-              to="https://www.linkedin.com/in/nuriddin-sirojiddinov-02a84a237/"
-              className="tooltip"
-              data-tip="Linkedin"
-            >
-              <LinkedinIcon />
-            </Link>
-            <Link
-              to="https://www.facebook.com/share/fpK7cKdaqqPkQdaw/?mibextid=qi2Omg"
-              className="tooltip"
-              data-tip="Facebook"
-            >
-              <FacebookIcon />
-            </Link>
-            <Link
-              to="https://t.me/Nuriddin909"
-              className="tooltip"
-              data-tip="Telegram"
-            >
-              <TelegramIcon />
-            </Link>
-            <Link
-              to="https://www.instagram.com/nuriddin_444?igsh=NnpueXlwN2tkYXh1"
-              className="tooltip"
-              data-tip="Instagram"
-            >
-              <InstagramIcon />
-            </Link>
-          </div>
         </div>
 
         <img
